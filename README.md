@@ -302,12 +302,12 @@ If you get a stack overflow, then put `---` in the table.
 
 |                            | `array`  | `list`  | `tuple`     | `deque`       |
 | -------------------------- | ---------| --------|------------ | ------------- |
-| `sequential_search_itr`    |          |         |             |               |
-| `sequential_search_itr2`   |          |         |             |               |
-| `sequential_search_rec`    |          |         |             |               |
-| `binary_search_itr`        |          |         |             |               |
-| `binary_search_rec`        |          |         |             |               |
-| `binary_search_rec2`       |          |         |             |               |
+| `sequential_search_itr`    |4.66 msec |950 usec |957 usec     |1.01 msec      |
+| `sequential_search_itr2`   |7.29 msec |2.12 msec|2.2 msec     |106 msec       |
+| `sequential_search_rec`    |141 usec  |2.25 msec|2.35 msec    |   ---------   |
+| `binary_search_itr`        |6.33 usec |1.78 usec|1.81 usec    |169 usec       |
+| `binary_search_rec`        |7.08 usec |2.7 usec |2.68 usec    |170 usec       |
+| `binary_search_rec2`       |6.16 usec |397 usec |418 usec     |   ---------   |
 
 You should notice that:
 1. for the `array` container, all implementations of binary search work well
